@@ -58,7 +58,7 @@ let s:bundle = neobundle#get("clang_complete")
 function! s:bundle.hooks.on_post_source(bundle)
     let g:clang_complete_copen      = 1
     let g:clang_use_library         = 1
-    let g:clang_library_path        = "/home/optman/opt/clang/clang/lib/"
+"    let g:clang_library_path        = 
     let g:clang_user_options        = "-std=c++14"
     " let g:clang_snippets            = 1
     let g:clang_auto_select         = 1
