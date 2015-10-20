@@ -44,31 +44,22 @@ set visualbell t_vb=
 set t_Co=256
 colorscheme desert
 
-let s:bundle = neobundle#get("caw.vim")
-function! s:bundle.hooks.on_post_source(bundle)
-    nmap \c <Plug>(caw:I:toggle)
-    vmap \c <Plug>(caw:I:toggle)
+" caw
 
-    nmap \C <Plug>(caw:I:uncomment)
-    vmap \C <Plug>(caw:I:uncomment)
-endfunction
-unlet s:bundle
+nmap \c <Plug>(caw:I:toggle)
+vmap \c <Plug>(caw:I:toggle)
 
-let s:bundle = neobundle#get("clang_complete")
-function! s:bundle.hooks.on_post_source(bundle)
-    let g:clang_complete_copen      = 1
-    let g:clang_use_library         = 1
-"    let g:clang_library_path        = 
-    let g:clang_user_options        = "-std=c++14"
-    " let g:clang_snippets            = 1
-    let g:clang_auto_select         = 1
-    let g:clang_complete_patterns   = 1
-endfunction
-unlet s:bundle
+nmap \C <Plug>(caw:I:uncomment)
+vmap \C <Plug>(caw:I:uncomment)
 
-let s:bundle = neobundle#get("vim-easymotion")
-function! s:bundle.hooks.on_post_source(bundle)
-    let g:EasyMotion_do_mapping = 0
-    nmap s <Plug>(easymotion-s2)
-endfunction
-unlet s:bundle
+" clang_complete
+let g:clang_complete_copen      = 1
+let g:clang_use_library         = 1
+let g:clang_library_path        = "/usr/lib/llvm-3.5/lib"
+let g:clang_user_options        = "-std=c++14"
+let g:clang_auto_select         = 1
+let g:clang_complete_patterns   = 1
+
+" easy-motion
+let g:EasyMotion_do_mapping = 0
+nmap s <Plug>(easymotion-s2)
