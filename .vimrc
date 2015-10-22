@@ -13,6 +13,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle "Lokaltog/vim-easymotion"
 NeoBundle "tyru/caw.vim"
 NeoBundle "plasticboy/vim-markdown"
+NeoBundle "rust-lang/rust.vim"
 NeoBundleLazy "Rip-Rip/clang_complete", {
 \ "autoload" : {
 \   "filetypes" : ["cpp", "c", "hpp", "h"]
