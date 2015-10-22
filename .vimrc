@@ -12,6 +12,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle "Lokaltog/vim-easymotion"
 NeoBundle "tyru/caw.vim"
+NeoBundle "plasticboy/vim-markdown"
 NeoBundleLazy "Rip-Rip/clang_complete", {
 \ "autoload" : {
 \   "filetypes" : ["cpp", "c", "hpp", "h"]
