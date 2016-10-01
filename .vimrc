@@ -38,7 +38,7 @@ set laststatus=2
 set visualbell t_vb=
 
 set list
-set listchars=tab:»-,trail:-,nbsp:%,eol:↲↲
+set listchars=tab:>>,trail:-,nbsp:%,eol:<
 
 set t_Co=256
 colorscheme desert
