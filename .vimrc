@@ -13,17 +13,11 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle "Lokaltog/vim-easymotion"
 NeoBundle "tyru/caw.vim"
 NeoBundle "plasticboy/vim-markdown"
-NeoBundleLazy "Rip-Rip/clang_complete", {
-\ "autoload" : {
-\   "filetypes" : ["cpp", "c", "hpp", "h"]
-\ }
-\}
-
-NeoBundleLazy "vim-scripts/nginx.vim", {
-\ "autoload" : {
-\   "filetypes" : ["nginx"]
-\ }
-\}
+"NeoBundleLazy "Rip-Rip/clang_complete", {
+"\ "autoload" : {
+"\   "filetypes" : ["cpp", "c", "hpp", "h"]
+"\ }
+"\}
 NeoBundleCheck
 
 call neobundle#end()
@@ -43,6 +37,9 @@ set laststatus=2
 
 set visualbell t_vb=
 
+set list
+set listchars=tab:»-,trail:-,nbsp:%,eol:↲↲
+
 set t_Co=256
 colorscheme desert
 
@@ -55,12 +52,12 @@ nmap \C <Plug>(caw:zeropos:uncomment)
 vmap \C <Plug>(caw:zeropos:uncomment)
 
 " clang_complete
-let g:clang_complete_copen      = 1
-let g:clang_use_library         = 1
-let g:clang_library_path        = "/usr/lib/llvm-3.8/lib"
-let g:clang_user_options        = "-std=c++14"
-let g:clang_auto_select         = 1
-let g:clang_complete_patterns   = 1
+"let g:clang_complete_copen      = 1
+"let g:clang_use_library         = 1
+"let g:clang_library_path        = "/usr/lib/llvm-3.8/lib"
+"let g:clang_user_options        = "-std=c++14"
+"let g:clang_auto_select         = 1
+"let g:clang_complete_patterns   = 1
 
 " easy-motion
 let g:EasyMotion_do_mapping = 0
