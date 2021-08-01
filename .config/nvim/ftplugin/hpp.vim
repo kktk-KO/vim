@@ -1,0 +1,1 @@
+exe 'runtime! cpp.vim'
